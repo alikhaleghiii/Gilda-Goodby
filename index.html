@@ -3,61 +3,102 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#090909">
-<title>برای دختر کوچولو</title>
+<meta name="theme-color" content="#080808">
+<meta name="description" content="برای یک خاطره‌ی عزیز؛ یک خداحافظی آرام و از ته دل.">
+<title>برای دختر کوچولو 🖤</title>
 <style>
-:root{color-scheme:dark;--bg:#090909;--panel:#121212;--text:#f0eeeb;--muted:#a6a19c;--line:#292725;--accent:#d8c3a5}
+@font-face{
+  font-family:'Doran';
+  src:url('fonts/Doran-Regular.woff2') format('woff2');
+  font-style:normal;font-weight:400;font-display:swap;
+}
+@font-face{
+  font-family:'Doran';
+  src:url('fonts/Doran-Medium.woff2') format('woff2');
+  font-style:normal;font-weight:500;font-display:swap;
+}
+@font-face{
+  font-family:'Doran';
+  src:url('fonts/Doran-Bold.woff2') format('woff2');
+  font-style:normal;font-weight:700;font-display:swap;
+}
+@font-face{
+  font-family:'Doran';
+  src:url('fonts/Doran-Light.woff2') format('woff2');
+  font-style:normal;font-weight:300;font-display:swap;
+}
+@font-face{
+  font-family:'Doran';
+  src:url('fonts/Doran-ExtraBold.woff2') format('woff2');
+  font-style:normal;font-weight:800;font-display:swap;
+}
+:root{color-scheme:dark;--bg:#080808;--panel:#11100f;--text:#f4eee6;--muted:#aaa19a;--gold:#d7bd92;--gold2:#a88a60;--line:rgba(215,189,146,.23)}
 *{box-sizing:border-box}
-body{margin:0;background:radial-gradient(ellipse at top,#1b1917 0%,var(--bg) 55%);color:var(--text);font-family:Tahoma,"Vazirmatn",Arial,sans-serif;line-height:2.1}
-main{width:min(720px,100%);margin:auto;padding:28px 22px 60px}
-.top{min-height:76vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
-.eyebrow{font-size:.78rem;letter-spacing:.12em;color:var(--muted);margin-bottom:22px}
-h1{font-size:clamp(2.2rem,8vw,4rem);font-weight:400;line-height:1.4;margin:0 0 10px}
-.sub{color:var(--muted);font-size:.95rem}
-.rule{width:48px;height:1px;background:var(--accent);margin:28px auto}
-button{border:1px solid #6d6255;background:transparent;color:var(--text);padding:12px 22px;border-radius:999px;font:inherit;cursor:pointer;transition:.2s}
-button:hover{background:#211e1a}
-button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-.hint{font-size:.78rem;color:var(--muted);margin-top:10px}
-article{background:rgba(18,18,18,.78);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,5vw,42px);box-shadow:0 20px 70px #0005}
-article p{margin:0 0 1.2em}
-article p:last-child{margin-bottom:0}
-.salute{color:var(--accent);font-size:1.1rem}
-.signature{margin-top:30px!important;color:var(--accent)}
-footer{text-align:center;color:#77716b;font-size:.78rem;margin-top:28px}
-audio{width:100%;margin-top:18px;display:none}
-#status{font-size:.8rem;color:var(--muted);min-height:1.5em;margin-top:8px}
-@media(prefers-reduced-motion:no-preference){.fade{animation:fadein 1.2s ease both}@keyframes fadein{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -10%,#292018 0%,#11100f 32%,var(--bg) 68%);color:var(--text);font-family:'Doran','F Doran','Vazirmatn',Tahoma,serif;line-height:2.15;overflow-x:hidden}
+body:before,body:after{content:'✦';position:fixed;color:rgba(215,189,146,.14);font-size:22px;pointer-events:none;z-index:-1;animation:float 7s ease-in-out infinite}
+body:before{top:13%;right:7%}body:after{bottom:14%;left:8%;font-size:16px;animation-delay:-3s}
+main{width:min(760px,100%);margin:auto;padding:24px 20px 52px}
+.hero{min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;padding:36px 0 54px}
+.moon{width:72px;height:72px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;margin-bottom:28px;box-shadow:0 0 55px rgba(215,189,146,.09);color:var(--gold);font-size:28px}
+.eyebrow{font-size:.78rem;letter-spacing:.08em;color:var(--gold);margin-bottom:12px}
+h1{font-size:clamp(2.6rem,10vw,5rem);font-weight:500;line-height:1.3;margin:0;color:#f7eee1;text-shadow:0 0 34px rgba(215,189,146,.13)}
+.subtitle{color:#c3b7aa;font-size:1rem;margin-top:10px}
+.date{font-size:.82rem;color:#8f857b;margin-top:5px}
+.ornament{display:flex;align-items:center;gap:12px;width:min(250px,70%);margin:26px auto 25px;color:var(--gold)}
+.ornament:before,.ornament:after{content:'';height:1px;background:linear-gradient(90deg,transparent,var(--gold2));flex:1}.ornament:after{background:linear-gradient(90deg,var(--gold2),transparent)}
+button{border:1px solid rgba(215,189,146,.55);background:linear-gradient(135deg,rgba(215,189,146,.13),rgba(215,189,146,.04));color:#f4e8d7;padding:12px 24px;border-radius:999px;font:inherit;font-size:.95rem;cursor:pointer;transition:transform .25s,border-color .25s,background .25s;box-shadow:0 10px 35px #0005}
+button:hover{transform:translateY(-2px);border-color:var(--gold);background:rgba(215,189,146,.15)}button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.hint{font-size:.77rem;color:#8f857b;margin-top:12px}
+audio{width:min(420px,100%);margin-top:18px;accent-color:var(--gold);display:none}
+#status{font-size:.8rem;color:var(--gold);min-height:1.5em;margin-top:7px}
+.letter{position:relative;background:linear-gradient(155deg,rgba(25,22,19,.97),rgba(13,13,13,.97));border:1px solid var(--line);border-radius:24px;padding:clamp(24px,6vw,52px);box-shadow:0 28px 90px #0008;overflow:hidden}
+.letter:before{content:'“';position:absolute;top:-30px;left:18px;font-family:Georgia,serif;font-size:150px;line-height:1;color:rgba(215,189,146,.07);pointer-events:none}
+.letter-label{display:flex;align-items:center;gap:10px;color:var(--gold);font-size:.8rem;margin-bottom:24px}.letter-label:before{content:'';width:24px;height:1px;background:var(--gold2)}
+.letter p{position:relative;margin:0 0 1.25em;font-size:1rem;color:#e5ddd4}.letter p:last-child{margin-bottom:0}.letter .salute{font-size:1.35rem;color:var(--gold);margin-bottom:1.3em}.letter .signature{margin-top:34px;color:var(--gold);font-size:1.05rem;line-height:2.3}
+.closing{padding:38px 12px 8px;text-align:center;color:#94887c;font-size:.82rem}.closing .heart{font-size:18px;color:#bda17a;margin-bottom:8px}
+footer{text-align:center;color:#625b54;font-size:.7rem;padding-top:14px}
+@keyframes float{0%,100%{transform:translateY(0);opacity:.65}50%{transform:translateY(-12px);opacity:1}}
+@media(prefers-reduced-motion:no-preference){.fade{animation:fadein 1.1s ease both}@keyframes fadein{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}}
+@media(max-width:480px){main{padding:12px 14px 34px}.hero{min-height:76vh}.letter{border-radius:18px}.letter p{font-size:.96rem;line-height:2.2}}
 </style>
 </head>
 <body>
 <main>
-<section class="top fade">
-<div class="eyebrow">برای یک خاطره‌ی عزیز</div>
-<h1>دختر کوچولو</h1>
-<div class="sub">۷ ماه و ۱۸ روز؛ بخشی از قصه‌ی من</div>
-<div class="rule"></div>
-<button id="start" type="button">قبل از رفتن، اینو گوش کن</button>
-<div class="hint">اگه آماده‌ای، آهنگ رو پخش کن و آروم بخون.</div>
-<audio id="song" controls preload="metadata">
-  <source src="song.mp3" type="audio/mpeg">
-  مرورگر شما پخش‌کننده‌ی صوتی را پشتیبانی نمی‌کند.
-</audio>
-<div id="status" aria-live="polite"></div>
+<section class="hero fade">
+  <div class="moon" aria-hidden="true">☾</div>
+  <div class="eyebrow">برای کسی که یک روز، تمام دنیام بود</div>
+  <h1>دختر کوچولو</h1>
+  <div class="subtitle">بعضی آدما می‌رن، اما ردّشون می‌مونه…</div>
+  <div class="date">۷ ماه و ۱۸ روز از قصه‌ای که برای من واقعی بود</div>
+  <div class="ornament" aria-hidden="true">✧</div>
+  <button id="start" type="button">آهنگ رو پخش کن و آروم بخون</button>
+  <div class="hint">این چند خط رو با عجله نخون؛ هر کلمه‌ش از ته دله.</div>
+  <audio id="song" controls preload="metadata">
+    <source src="song.mp3" type="audio/mpeg">
+    مرورگر شما پخش‌کننده‌ی صوتی را پشتیبانی نمی‌کند.
+  </audio>
+  <div id="status" aria-live="polite"></div>
 </section>
 
-<article class="fade">
-<p class="salute">دختر کوچولو،</p>
-<p>راستش فکر نمی‌کردم یه روزی برسه که بخوام این‌جوری باهات خداحافظی کنم.</p>
-<p>این ۷ ماه و ۱۸ روز برای من فقط گذشتن چند ماه نبود. پر بود از لحظه‌هایی که یه گوشه‌ی ذهنم می‌مونن؛ ناز حرف زدنت، خنده‌هات، قشنگی‌هات و وقت‌هایی که حواست بهم بود. خیلی چیزا ازت یاد گرفتم و بابت لحظه‌های خوبی که کنار هم داشتیم، واقعاً ممنونم.</p>
-<p>اما نمی‌خوام وانمود کنم آخرش ناراحتم نکرد. وقتی دو روز بلاک شدم و بدون اینکه بفهمم چرا بهم گفتی خیانتکار، چیزی توی دلم شکست. من انتظار نداشتم همه‌چی همیشه بی‌نقص باشه؛ فقط دلم می‌خواست قبل از قضاوت شدن، فرصتی برای حرف زدن داشته باشیم.</p>
-<p>با این حال، نمی‌خوام آخرین چیزی که از من می‌مونه دعوا یا تلخی باشه. احساسی که بهت داشتم واقعی بود و خاطره‌های خوبمون هم برای من واقعی می‌مونن. اگه جایی اشتباه کردم، سهم خودم رو انکار نمی‌کنم؛ ولی نمی‌خوام برای نگه داشتن کسی، از احترام به خودم بگذرم.</p>
-<p>امیدوارم یه روز، وقتی به این رابطه فکر کردی، یادت بیاد که یه نفر بود که صادقانه دوستت داشت، به جزئیات کوچیکت توجه می‌کرد و حتی وقتی دلش شکست، نخواست با بدی جواب بده.</p>
-<p>من خاطره‌های خوب رو با خودم می‌برم و از اینجا به بعد، مسیرمون جداست. نه از روی نفرت، نه برای اینکه چیزی رو ثابت کنم؛ فقط چون گاهی دوست داشتن به‌تنهایی برای ادامه دادن کافی نیست.</p>
-<p>مراقب خودت باش. امیدوارم از ته دل خوشحال باشی و زندگی برات پر از روزهای خوب باشه.</p>
-<p class="signature">ممنون بابت خاطره‌ها.<br>خداحافظ، دختر کوچولو.</p>
+<article class="letter fade">
+  <div class="letter-label">چیزی که دلم می‌خواست بگم</div>
+  <p class="salute">دختر کوچولوی من،</p>
+  <p>نمی‌دونم وقتی این نوشته رو می‌خونی چه حسی داری، یا اصلاً با چه حالی به این صفحه رسیدی. فقط می‌دونم نوشتن این چند خط برای من آسون نیست؛ چون دارم با کسی خداحافظی می‌کنم که یه مدت، بودنش یکی از قشنگ‌ترین قسمت‌های روزهام بود.</p>
+  <p>هفت ماه و هجده روز شاید برای بعضی‌ها فقط یه عدد باشه، اما برای من پر از لحظه‌هاییه که نمی‌شه با تقویم اندازه‌شون گرفت. پر از حرف‌ها، خنده‌ها، دل‌تنگی‌ها، انتظار پیام‌هات و اون حس کوچیکی که با دیدن اسم تو روی صفحه‌ی گوشیم توی دلم روشن می‌شد. شاید خیلی از اون لحظه‌ها ساده به نظر می‌رسیدن، ولی برای من ساده نبودن؛ چون تو توی اون لحظه‌ها حضور داشتی.</p>
+  <p>من فقط روزهای قشنگ رو دوست نداشتم؛ خودت رو، با همه‌ی ریزه‌کاری‌هات و حال‌وهوات دوست داشتم. گاهی حتی چیزهای کوچیکی که شاید خودت یادت نمی‌مونه، برای من عزیز بودن. شاید نتونسته باشم همیشه اون‌طور که باید احساسم رو نشون بدم، اما چیزی که بین من بود، برای خودم بازی یا سرگرمی نبود. من با دلم اومده بودم.</p>
+  <p>برای همین، اتفاق‌های آخر بیشتر از چیزی که شاید فکر کنی ناراحتم کرد. دو روز بلاک بودن و شنیدن کلمه‌ی «خیانتکار» بدون اینکه فرصت داشته باشم بفهمم دقیقاً چی شده و حرفم رو بزنم، برای من سنگین بود. نه چون فکر می‌کردم هیچ‌وقت نباید ازم ناراحت بشی؛ بلکه چون آرزو داشتم اگر چیزی دلت رو شکسته یا به چیزی شک کردی، قبل از هر قضاوتی با هم حرف بزنیم. دلم می‌خواست به‌جای سکوت و فاصله، حداقل یک فرصت برای شنیدن همدیگه داشته باشیم.</p>
+  <p>نمی‌خوام این نوشته تبدیل به دادگاهِ تو یا دفاعیه‌ی من بشه. من هم آدم بی‌نقصی نیستم؛ ممکنه جایی اشتباه کرده باشم، چیزی رو درست نگفته باشم یا نتونسته باشم اون‌طور که لازم بود، تو رو بفهمم. اگر از سمت من زخمی موند، بابتش متأسفم. اما کاش می‌شد دردها رو با حرف زدن روشن کنیم، نه با برچسب زدن و دور شدن. چون وقتی کسی رو دوست داری، حتی اختلاف و دلخوری هم باید جایی برای احترام باقی بذاره.</p>
+  <p>شاید تلخ‌ترین قسمت ماجرا همین باشه که آدم هنوز خاطره‌های قشنگی توی دلش داره، اما دیگه نمی‌دونه چطور باید کنار اون خاطره‌ها ادامه بده. من هنوز می‌تونم به لحظه‌های خوبمون لبخند بزنم و هم‌زمان از پایانشون غصه بخورم. این دو حس با هم تناقض ندارن؛ فقط یعنی چیزی که برام مهم بوده، حالا داره تموم می‌شه و من باید یاد بگیرم نبودنش رو بپذیرم.</p>
+  <p>اگر یه روز از این رابطه چیزی یادت موند، امیدوارم فقط آخرش نباشه. امیدوارم یادت بیاد یه نفر بود که با دیدن خوشحالیت خوشحال می‌شد، به بودن تو اهمیت می‌داد و دلش می‌خواست بین‌تون امنیت و اعتماد باشه. من نمی‌خوام خودم رو قهرمان این قصه بدونم و تو رو مقصر همه‌چیز؛ قصه‌ی ما حتماً بیشتر از یک روایت و یک احساسه. فقط می‌خوام بدونی احساسی که من داشتم، برای من واقعی بود.</p>
+  <p>دلم می‌خواست پایانمون شکل دیگه‌ای داشته باشه؛ با یک گفت‌وگوی صادقانه، با شنیدن حرف‌های همدیگه، شاید حتی با چند دقیقه سکوتی که توش مجبور نباشیم از هم دفاع کنیم. اما همیشه پایان‌ها همون شکلی که دلمون می‌خواد اتفاق نمی‌افتن. گاهی آدم باید با سؤال‌هایی که جواب نگرفتن کنار بیاد و بپذیره که نمی‌تونه به‌تنهایی رابطه‌ای رو نگه داره.</p>
+  <p>من خاطره‌های خوبت رو با خودم نگه می‌دارم، اما نمی‌خوام برای موندن، از آرامش و احترام به خودم بگذرم. این خداحافظی از روی نفرت نیست و قرار نیست چیزی رو بهت ثابت کنه. فقط تلاشی‌یه برای اینکه این قصه رو با تلخی بیشتری ادامه ندم؛ قصه‌ای که با امید شروع شد و با وجود همه‌چیز، بخش‌هایی ازش همیشه برام عزیز می‌مونه.</p>
+  <p>امیدوارم زندگی باهات مهربون باشه. امیدوارم روزهایی داشته باشی که از ته دل بخندی، آدم‌هایی کنارت باشن که احساس امنیت کنی و هر جا که هستی، دلت سبک و آروم باشه. من هم باید مسیر خودم رو ادامه بدم؛ شاید آهسته، شاید با دلتنگی، اما با این باور که خاطره‌ی یک نفر می‌تونه عزیز بمونه، حتی وقتی دیگه قرار نیست کنار هم باشیم.</p>
+  <p>ممنونم برای روزهایی که بودی، برای لحظه‌هایی که خندیدیم و برای چیزهایی که این رابطه به من یاد داد. نمی‌تونم قول بدم دلتنگ نشم؛ فقط می‌تونم قول بدم سعی کنم با احترام از این خاطره عبور کنم. بعضی خداحافظی‌ها به معنی بی‌ارزش شدن گذشته نیستن؛ فقط یعنی باید گذشته رو همون‌جا که هست، با همه‌ی قشنگی و دردش، گذاشت و رفت.</p>
+  <p class="signature">مراقب قلب کوچولوت باش…<br>امیدوارم خوشحال باشی، حتی اگر از دور.<br><br>خداحافظ، دختر کوچولو. 🖤</p>
 </article>
-<footer>این صفحه برای یک خداحافظی محترمانه ساخته شده.</footer>
+<div class="closing fade"><div class="heart">✧</div>بعضی قصه‌ها تموم می‌شن؛ اما چیزی که از دل گذشته، یک‌شبه محو نمی‌شه.</div>
+<footer>برای یک خاطره‌ی عزیز؛ با احترام، بدون کینه.</footer>
 </main>
 <script>
 const btn=document.getElementById('start');
@@ -65,15 +106,10 @@ const audio=document.getElementById('song');
 const status=document.getElementById('status');
 btn.addEventListener('click', async ()=>{
   audio.style.display='block';
-  try{
-    await audio.play();
-    btn.textContent='آهنگ در حال پخشه';
-    status.textContent='می‌تونی هم‌زمان متن رو بخونی.';
-  }catch(e){
-    status.textContent='برای پخش آهنگ، دکمه‌ی پخش روی پلیر رو بزن.';
-  }
+  try{await audio.play();btn.textContent='آهنگ در حال پخشه';status.textContent='آروم بخون؛ می‌تونی هم‌زمان متن رو دنبال کنی.';}
+  catch(e){status.textContent='برای پخش آهنگ، دکمه‌ی پخش روی پلیر رو بزن.';}
 });
-audio.addEventListener('error',()=>{status.textContent='فایل song.mp3 هنوز اضافه نشده؛ طبق راهنما فایل آهنگت رو کنار index.html قرار بده.';});
+audio.addEventListener('error',()=>{status.textContent='فایل song.mp3 پیدا نشد؛ مطمئن شو کنار index.html آپلود شده.';});
 </script>
 </body>
 </html>
